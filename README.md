@@ -48,8 +48,8 @@ result:
 
 ```php
 
-$tokenArray->isiOs(); // true
-$tokenArray->isAndroid(); // false
+$tokenArray->isiOs(); // true Will get first token
+$tokenArray->isAndroid(); // false Will get first token
 $tokenArray->isiOs("iOsDeviceToken"); // true
 $tokenArray->isAndroid("iOsDeviceToken"); // false
 $tokenArray->isiOs("androidDeviceToken"); // false
