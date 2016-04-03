@@ -2,7 +2,7 @@
   "name": "sbrilenko/php-device-checker",
   "description": "PHP device checker",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "dev-master",
   "autoload": {
     "psr-4": {
       "PHPDeviceChecker\\": "src"
