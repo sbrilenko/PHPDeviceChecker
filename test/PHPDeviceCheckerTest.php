@@ -29,7 +29,7 @@ class PHPDeviceCheckerTest extends PHPUnit_Framework_TestCase
         $this->assertFalse($testAnfroid->isiOs($this->androidToken));
         $this->assertTrue($testAnfroid->isAndroid($this->androidToken));
         $this->assertEquals('android',$testAnfroid->os());
-        $this->assertEquals('ios',$testAnfroid->os($this->androidToken));
+        $this->assertEquals('android',$testAnfroid->os($this->androidToken));
         $this->assertNull($testAnfroid->os($this->iOsToken));
     }
 
