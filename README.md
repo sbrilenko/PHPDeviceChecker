@@ -54,7 +54,7 @@ $tokenArray->isiOs("iOsDeviceToken"); // true
 $tokenArray->isAndroid("iOsDeviceToken"); // false
 $tokenArray->isiOs("androidDeviceToken"); // false
 $tokenArray->isAndroid("androidDeviceToken"); // true
-$tokenArray->os()); // "ios"
+$tokenArray->os(); // "ios"
 $tokenArray->os("iOsDeviceToken"); // "ios"
 $tokenArray->os("androidDeviceToken"); // "android"
 
