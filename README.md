@@ -7,7 +7,7 @@ PHP Device Checker
 
 Installation
 ------------
-add to your composer.json - `"sbrilenko/PHPDeviceChecker": "*"`
+add to your composer.json - `"sbrilenko/php-device-checker": "*"`
 
 For now support Android And iOs devices
 
