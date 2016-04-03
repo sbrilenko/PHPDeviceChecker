@@ -34,7 +34,7 @@ class PHPDeviceChecker
     public function Os($token=null)
     {
         if($token){
-            return $this->result[$token]?$this->result[$token]?$this->result[$token]["os"]:null:null;
+            return isset($this->result[$token])?$this->result[$token]["os"]:null;
         }else{
             return $this->isArray?$this->result[key($this->result)]["os"]:$this->result[$this->token]["os"];
         }
@@ -47,7 +47,7 @@ class PHPDeviceChecker
     public function isiOs($token=null)
     {
         if($token){
-            return $this->result[$token]?$this->result[$token]?$this->result[$token]["isiOs"]:false:false;
+            return isset($this->result[$token])?$this->result[$token]["isiOs"]:false;
         }else{
             return $this->isArray?$this->result[key($this->result)]["isiOs"]:$this->result[$this->token]["isiOs"];
         }
@@ -61,7 +61,7 @@ class PHPDeviceChecker
     public function isAndroid($token=null)
     {
         if($token){
-            return $this->result[$token]?$this->result[$token]?$this->result[$token]["isAndroid"]:false:false;
+            return isset($this->result[$token])?$this->result[$token]["isAndroid"]:false;
         }else{
             return $this->isArray?$this->result[key($this->result)]["isAndroid"]:$this->result[$this->token]["isAndroid"];
         }
