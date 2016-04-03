@@ -48,13 +48,13 @@ result:
 
 ```php
 
-$tokenArray->isiOs(); // true Will get first token
-$tokenArray->isAndroid(); // false Will get first token
+$tokenArray->isiOs(); // true By first token
+$tokenArray->isAndroid(); // false By first token
 $tokenArray->isiOs("iOsDeviceToken"); // true
 $tokenArray->isAndroid("iOsDeviceToken"); // false
 $tokenArray->isiOs("androidDeviceToken"); // false
 $tokenArray->isAndroid("androidDeviceToken"); // true
-$tokenArray->os(); // "ios"
+$tokenArray->os(); // "ios" By first token
 $tokenArray->os("iOsDeviceToken"); // "ios"
 $tokenArray->os("androidDeviceToken"); // "android"
 
