@@ -74,13 +74,12 @@ class PHPDeviceChecker
      */
     private function getOs()
     {
-        if (preg_match('/[_\-]/', $this->token))
-        {
+        if (preg_match('/[_\-]/', $this->token)) {
             $this->result[$this->token]=array("isiOs"=>false,"isAndroid"=>true,"os"=>"android");
-        }
-        else {
+        } elseif (mb_strlen($this->token) == 64) {
             $this->result[$this->token]=array("isiOs"=>true,"isAndroid"=>false,"os"=>"ios");
-
+        } else {
+            return $this->result[$this->token]=array("isiOs"=>false,"isAndroid"=>false,"os"=>"");
         }
     }
 }
