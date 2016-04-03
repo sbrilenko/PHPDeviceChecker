@@ -44,7 +44,7 @@ $tokenArray = new PHPDeviceChecker(["iOsDeviceToken","androidDeviceToken"]);
 
 result:
 
-{"7a20e06257a5d5c608cad848df5f351e6693ffce8aa04cc7bb290bca915a4f17":{"isiOs":true,"isAndroid":false,"os":"ios"},"APA91bFiQLPpECz3fRRgrYZIsZJah9t20YRgITmu7nWaa4M2k115E83oZeGqzIx8_YKXYot--x_rVcV-JQG-9w1GsR2aQQJPbNYkH-mqJf15T10Ewy1pLXLnwcex0W5pJ6Bk-ubKlz9vXkyUu8eo_q_lp4um_IesCAPntEnagMfjP9dBDIP1sRw":{"isiOs":false,"isAndroid":true,"os":"android"}}
+{"iOsDeviceToken":{"isiOs":true,"isAndroid":false,"os":"ios"},"androidDeviceToken":{"isiOs":false,"isAndroid":true,"os":"android"}}
 
 ```php
 
